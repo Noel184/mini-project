@@ -8,7 +8,7 @@
 }
 
 h3 {
-  color: #333333;
+  color: black;
   font-size: 1.4rem;
   margin-bottom: 12px;
 }
@@ -17,24 +17,24 @@ h3 {
   display: flex;
   justify-content: space-between;
   padding: 8px 0;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid black;
   font-size: 0.95rem;
-  color: #333333;
+  color: black;
 }
 
 p {
-  color: #666666;
+  color: black;
   font-style: italic;
 }
 
 hr {
   border: none;
-  border-top: 1px solid #333333;
+  border-top: 1px solid black;
   margin: 12px 0;
 }
 
 h4 {
-  color: #333333;
+  color: black;
   font-size: 1.1rem;
   margin-bottom: 12px;
 }

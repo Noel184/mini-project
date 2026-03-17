@@ -35,7 +35,7 @@
 }
 
 .nav-links a.active {
-  background-color: #333333;
+  background-color: black;
   color: maroon;
   font-weight: bold;
 }
