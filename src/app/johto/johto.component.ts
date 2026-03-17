@@ -1,16 +1,12 @@
-import { Component,inject } from '@angular/core';
+import { Component ,inject} from '@angular/core';
 import { PokemonService } from '../pokemon.service';
-
 @Component({
   selector: 'app-johto',
-  imports: [],
+  standalone: true,
   templateUrl: './johto.component.html',
   styleUrl: './johto.component.css'
 })
 export class JohtoComponent {
-
-  service= inject(PokemonService);
-
-  pokemon= this.service.johtoPokemon;
+  pokemonService = inject(PokemonService);
 
 }

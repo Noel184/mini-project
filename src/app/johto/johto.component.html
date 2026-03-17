@@ -1,8 +1,14 @@
-<h2>Johto Pokemon</h2>
+<div class="region-container">
+  <h2>Johto Region</h2>
 
-<div class ="card" *ngFor="let p of pokemon">
-    <h3>{{p.name}}</h3>
-    <p>Type: {{p.type}}</p>
-    <p>Held Item: {{p.item}}</p>
-    <p>{{p.description}}</p>
+  <div class="card-grid">
+    @for (pokemon of pokemonService.johtoPokemons(); track pokemon.name) {
+      <div class="card">
+        <h3>{{ pokemon.name }}</h3>
+        <p><span class="label">Type:</span> {{ pokemon.type }}</p>
+        <p><span class="label">Held Item:</span> {{ pokemon.heldItem }}</p>
+        <p class="desc">{{ pokemon.description }}</p>
+      </div>
+    }
+  </div>
 </div>

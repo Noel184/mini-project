@@ -1,13 +1,11 @@
-<h1>Pokemon Regions</h1>
+<nav class="navbar">
+  <div class="nav-brand">PokeDex Application</div>
 
-<nav>
-    <a routerLink="/">Home</a>
-    <a routerLink="/kanto">Kanto</a>
-    <a routerLink="/johto">Johto</a>
-    <a routerLink="/hoenn">Hoenn</a>
-    <a routerLink="/pokemart">Pokemart</a>
+  <div class="nav-links">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a routerLink="/kanto" routerLinkActive="active"> Kanto</a>
+    <a routerLink="/johto" routerLinkActive="active"> Johto</a>
+    <a routerLink="/hoenn" routerLinkActive="active"> Hoenn</a>
+    <a routerLink="/pokemart" routerLinkActive="active">PokeMart</a>
+  </div>
 </nav>
-
-<hr>
-
-<router-outlet></router-outlet>

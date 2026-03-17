@@ -1,0 +1,16 @@
+<div class="cart">
+  <h3>Your Cart</h3>
+
+  @for (item of pokemonService.cart(); track $index) {
+    <div class="cart-item">
+      <span>{{ item.name }}</span>
+      <span>₱{{ item.price }}</span>
+    </div>
+  } @empty {
+    <p>Your cart is empty.</p>
+  }
+
+  <hr>
+  <h4>Total: ₱{{ pokemonService.totalPrice() }}</h4>
+  <button (click)="pokemonService.clearCart()">Clear Cart</button>
+</div>

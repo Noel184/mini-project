@@ -6,10 +6,10 @@ import { HoennComponent } from './hoenn/hoenn.component';
 import { PokemartComponent } from './pokemart/pokemart.component';
 
 export const routes: Routes = [
-    {path:'', component:HomeComponent},
-    {path:'kanto', component:KantoComponent},
-    {path:'johto', component:JohtoComponent},
-    {path:'hoenn', component:HoennComponent},
-    {path:'pokemart', component:PokemartComponent}
+  { path: '',         component: HomeComponent },
+  { path: 'kanto',    component: KantoComponent },
+  { path: 'johto',    component: JohtoComponent },
+  { path: 'hoenn',    component: HoennComponent },
+  { path: 'pokemart', component: PokemartComponent },
+  { path: '**',       redirectTo: '' }
 ];
-

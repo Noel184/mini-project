@@ -1,15 +1,16 @@
-<h2>Pokemart</h2>
+<div class="mart">
+  <h2>PokeMart</h2>
 
-<div *ngFor="let item of items" class="card">
-    <h3>{{item.name}}</h3>
-    <p>{{item.price}}</p>
-    <button (click)="add(item)">Add to Cart</button>
+  <div class="items-grid">
+    @for (item of pokemonService.martItems(); track item.id) {
+      <div class="item-card">
+        <h3>{{ item.name }}</h3>
+        <p>₱{{ item.price }}</p>
+        <button (click)="pokemonService.addToCart(item)">Add to Cart</button>
+      </div>
+    }
+  </div>
+  
+  <app-cart /> 
+
 </div>
-
-<h2>Cart</h2>
-
-<div *ngFor="let c of cart()">
-    {{c.name}} - {{c.price}}
-</div>
-
-<h3>Total: {{total()}}</h3>
