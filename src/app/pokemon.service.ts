@@ -29,25 +29,25 @@ johtoPokemons = signal ([
 ]);
 hoennPokemons = signal([
   {name:'Sceptile' , type: 'Grass', heldItem:'Miracle Seed', description:'The Forest Pokemon' },
-  {name:'Blaziken' , type: 'Fire/Fighting', heldItem:'Attck weight', description:'The Blaze Pokemon' },
+  {name:'Blaziken' , type: 'Fire/Fighting', heldItem:'Charcoal', description:'The Blaze Pokemon' },
   {name:'Swampert' , type: 'Water/Ground', heldItem:'Leftovers', description:'The Mud Fish Pokemon' },
   {name:'Kyogre' , type: 'Water', heldItem:'Blue Orb', description:'The Sea Basin Pokemon' },
-  {name:'Hariyama' , type: 'Fighting', heldItem:'Assault Vest', description:'The Arm Thrust  Pokemon' },
+  {name:'Hariyama' , type: 'Fighting', heldItem:'Punching Glove', description:'The Arm Thrust  Pokemon' },
   {name:'Rayquaza' , type: 'Dragon/Flying', heldItem:'Dragon Fang', description:'The Sky High pokemon' },
 
 ]);
 
 martItems = signal([
-  {id:1, name:'Pokeball' , price: 200},
-  {id:2, name:'Greatball' , price:400},
-  {id:3, name:'Ultraball' , price:750},
-  {id:4, name:'Potion' , price:200},
-  {id:5, name:'Great Potion' , price:600},
-  {id:6, name:'Full Restore' , price:2000},
-  {id:7, name:'Escape Rope' , price:750},
-  {id:8, name:'Pokedoll' , price:1050},
-  {id:9, name:'Quickball' , price:750},
-  {id:10, name:'Duskball' , price:70},
+  {id:1, name:'Poke Ball' , price: 200},
+  {id:2, name:'Great Ball' , price: 600},
+  {id:3, name:'Ultra Ball' , price:1200},
+  {id:4, name:'Potion' , price:300},
+  {id:5, name:'Super Potion' , price:700},
+  {id:6, name:'Hyper Potion' , price:1500},
+  {id:7, name:'Revive' , price:2000},
+  {id:8, name:'Antidote' , price:100},
+  {id:9, name:'Paralyze Heal' , price:200},
+  {id:10, name:'Escape Rope' , price:550},
 
 ]);
  private cartItems = signal<any[]>([]);
