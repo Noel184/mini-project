@@ -7,7 +7,7 @@ export class PokemonService {
 
 kantoPokemons = signal([
   {name:'Charizard' , type: 'Fire/Flying', heldItem:'Charcoal', description:'The Flame Pokemon' },
-  {name:'Blastoise' , type: 'Water', heldItem:'Mystic Water', description:'The Mantis pokemon' },
+  {name:'Blastoise' , type: 'Water', heldItem:'Mystic Water', description:'The Shellfish Pokemon' },
   {name:'Mew' , type: 'Psychic', heldItem:'Life Orb', description:'The New Species Pokemon' },
   {name:'Jolteon' , type: 'Electric', heldItem:'Magnet', description:'The Lightning Pokemon' },
   {name:'Arcanine' , type: 'Fire', heldItem:'Sitrus Berry', description:'The Legendary Pokemon' },
