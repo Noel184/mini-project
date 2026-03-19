@@ -6,22 +6,22 @@ import { Injectable,signal,computed   } from '@angular/core';
 export class PokemonService {
 
 kantoPokemons = signal([
-  {name:'Charizard' , type: 'Fire/Flying', heldItem:'Charcoal', description:'The Flame Pokemon' },
-  {name:'Blastoise' , type: 'Water', heldItem:'Mystic Water', description:'The Shellfish Pokemon' },
-  {name:'Mew' , type: 'Psychic', heldItem:'Life Orb', description:'The New Species Pokemon' },
-  {name:'Jolteon' , type: 'Electric', heldItem:'Magnet', description:'The Lightning Pokemon' },
-  {name:'Arcanine' , type: 'Fire', heldItem:'Sitrus Berry', description:'The Legendary Pokemon' },
-  {name:'Venasaur' , type: 'Grass/Poison', heldItem:'Miracle Seed', description:'The Seed Pokemon' },
+  {name:'Charizard' , type: 'Fire/Flying', heldItem:'Charcoal', description:'The Flame Pokemon', image:'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/006.png' },
+  {name:'Blastoise' , type: 'Water', heldItem:'Mystic Water', description:'The Shellfish Pokemon', image: 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/009.png' },
+  {name:'Mew' , type: 'Psychic', heldItem:'Life Orb', description:'The New Species Pokemon', image:'https://upload.wikimedia.org/wikipedia/en/4/4b/Pok%C3%A9mon_Mew_art.png' },
+  {name:'Jolteon' , type: 'Electric', heldItem:'Magnet', description:'The Lightning Pokemon', image:'https://archives.bulbagarden.net/media/upload/thumb/e/e3/0135Jolteon.png/800px-0135Jolteon.png' },
+  {name:'Arcanine' , type: 'Fire', heldItem:'Sitrus Berry', description:'The Legendary Pokemon', image:'https://archives.bulbagarden.net/media/upload/thumb/4/42/0059Arcanine.png/250px-0059Arcanine.png' },
+  {name:'Venasaur' , type: 'Grass/Poison', heldItem:'Miracle Seed', description:'The Seed Pokemon', image:'https://archives.bulbagarden.net/media/upload/thumb/6/6b/0003Venusaur.png/640px-0003Venusaur.png' },
 
   
 ]);
 
 johtoPokemons = signal ([
-  {name:'Typhlosion' , type: 'Fire', heldItem:'Charcoal', description:'The Volcano pokemon' },
-  {name:'Feraligatr' , type: 'Water', heldItem:'Mystic Water', description:'The Big Jaw Pokemon' },
-  {name:'Rhydon' , type: 'Ground/Rock', heldItem:'Eviolite', description:'The Drill Pokemon' },
-  {name:'Suicune' , type: 'Water', heldItem:'Choice Band', description:'The Aurora Pokemon' },
-  {name:'Entei' , type: 'Fire', heldItem:'Choice Band', description:'The Volcano Pokemon' },
+  {name:'Typhlosion' , type: 'Fire', heldItem:'Charcoal', description:'The Volcano pokemon', image:'https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Typhlosion.png/250px-Typhlosion.png' },
+  {name:'Feraligatr' , type: 'Water', heldItem:'Mystic Water', description:'The Big Jaw Pokemon', image:'https://archives.bulbagarden.net/media/upload/thumb/2/29/0160Feraligatr.png/250px-0160Feraligatr.png' },
+  {name:'Rhydon' , type: 'Ground/Rock', heldItem:'Eviolite', description:'The Drill Pokemon', image:'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/112.png' },
+  {name:'Suicune' , type: 'Water', heldItem:'Choice Band', description:'The Aurora Pokemon', image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1qdJpKrrljuqqzISTcQsrn0exvZ7KhiRAfw&s' },
+  {name:'Entei' , type: 'Fire', heldItem:'Choice Band', description:'The Volcano Pokemon', image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQclPIIfOTcPREjhJj69OYLKkzHWw3mBok8cg&s' },
   {name:'Lugia' , type: 'Psychic/Flying', heldItem:'Leftovers', description:'The Diving Pokemon' },
 
 

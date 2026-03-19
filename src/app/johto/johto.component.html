@@ -5,6 +5,7 @@
     @for (pokemon of pokemonService.johtoPokemons(); track pokemon.name) {
       <div class="card">
         <h3>{{ pokemon.name }}</h3>
+        <img [src]="pokemon.image" alt ="{{pokemon.name}}" class="pokemon-img"/>
         <p><span class="label">Type:</span> {{ pokemon.type }}</p>
         <p><span class="label">Held Item:</span> {{ pokemon.heldItem }}</p>
         <p class="desc">{{ pokemon.description }}</p>

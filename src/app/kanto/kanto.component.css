@@ -50,3 +50,10 @@ h2 {
   color: black;
   font-size: 0.9rem;
 }
+
+.pokemon-img{
+  width: 100px;
+  height: 100px;
+  display:block;
+  margin:auto;
+}
